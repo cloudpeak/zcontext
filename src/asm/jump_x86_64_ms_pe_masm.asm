@@ -77,7 +77,7 @@
 
 .code
 
-jump_zcontext PROC ZCONTEXT_EXPORT FRAME
+jump_zcontext PROC FRAME
     .endprolog
 
     push  rbp  ; save RBP
