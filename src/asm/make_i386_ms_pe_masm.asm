@@ -26,7 +26,7 @@
 _exit PROTO, value:SDWORD
 .code
 
-make_zcontext PROC ZCONTEXT_EXPORT
+make_zcontext PROC
     ; first arg of make_zcontext() == top of context-stack
     mov  eax, [esp+04h]
 
