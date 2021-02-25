@@ -24,7 +24,7 @@
 .model flat, c
 .code
 
-jump_zcontext PROC ZCONTEXT_EXPORT
+jump_zcontext PROC
     ; fourth arg of jump_zcontext() == flag indicating preserving FPU
     mov  ecx, [esp+010h]
 
