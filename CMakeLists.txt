@@ -8,6 +8,8 @@ else()
     enable_language(CXX ASM)
 endif()
 
+set(CMAKE_ASM_MASM_CREATE_STATIC_LIBRARY "<CMAKE_AR> /OUT:<TARGET> <LINK_FLAGS> <OBJECTS>")
+
 if(MSVC AND CMAKE_CL_64 EQUAL 0)
     set(CMAKE_ASM_MASM_FLAGS "${CMAKE_ASM_MASM_FLAGS} /safeseh")
 endif()
